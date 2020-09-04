@@ -7,6 +7,8 @@
 <title>Confirmación de Registro</title>
 </head>
 <body>
-	El alumno con nombre ${elAlumno.nombre} y apellido ${elAlumno.apellido} se ha registrado con éxito.
+	El alumno con nombre <strong>${elAlumno.nombre}</strong> y apellido <strong>${elAlumno.apellido}</strong> se ha registrado con éxito.
+	<br/>
+	La asignatura escodiga es: <strong>${elAlumno.optativa}</strong>.
 </body>
 </html>

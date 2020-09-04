@@ -12,8 +12,17 @@
 		Nombre: <form:input path="nombre"/>
 		<br>
 		Apellido: <form:input path="apellido"/>
-		<br>
-		<input type="submit" value="enviar">
+		<br/>
+		Asignaturas Optativas: 
+		<br/>
+		<form:select path="optativa">
+			<form:option value="Diseño" label="Diseño"/>
+			<form:option value="Karate" label="Karate"/>
+			<form:option value="Comercio" label="Comercio"/>
+			<form:option value="Danza" label="Danza"/>
+		</form:select>
+		<br/>
+		<input type="submit" value="Enviar">
 	</form:form>
 </body>
 </html>
