@@ -1,5 +1,8 @@
 package es.pildoras.spring.mvc;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 public class Alumno {
 	
 	
@@ -37,7 +40,9 @@ public class Alumno {
 	public void setIdiomasAlumno(String idiomasAlumno) {
 		this.idiomasAlumno = idiomasAlumno;
 	}
-
+	
+	@NotNull
+	@Size(min=2, message="Campo requerido")
 	private String nombre;
 	private String apellido;
 	private String optativa;
