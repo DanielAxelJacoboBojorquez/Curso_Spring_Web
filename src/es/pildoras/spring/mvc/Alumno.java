@@ -6,6 +6,8 @@ import org.springframework.beans.propertyeditors.StringTrimmerEditor;
 import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 
+import es.pildoras.spring.mvc.validacionespersonalizadas.CPostalMadrid;
+
 public class Alumno {
 	//Validacion de Espacios
 	@InitBinder
@@ -76,14 +78,15 @@ public class Alumno {
 	@Size(min=2, message="Campo requerido")
 	private String nombre;
 	private String apellido;
-	@Min(value=10, message="No se permiten edades menores a 10 a�os")
-	@Max(value=100, message="No se permiten edades mayores a 100 a�os")
+	@Min(value=10, message="No se permiten edades menores a 10")
+	@Max(value=100, message="No se permiten edades mayores a 100")
 	private int edad;
 	private String optativa;
 	private String ciudadEstudios;
 	private String idiomasAlumno;
 	@Email
 	private String email;
-	@Pattern(regexp="[0-9]{5}", message="Solo 5 valores numericos")
+	//@Pattern(regexp="[0-9]{5}", message="Solo 5 valores numericos")
+	@CPostalMadrid
 	private String codigoPostal;
 }
