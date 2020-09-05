@@ -2,8 +2,17 @@ package es.pildoras.spring.mvc;
 
 import javax.validation.constraints.*;
 
+import org.springframework.beans.propertyeditors.StringTrimmerEditor;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
+
 public class Alumno {
-	
+	//Validación de Espacios
+	@InitBinder
+	public void miBinder(WebDataBinder binder) {
+		StringTrimmerEditor recortaEspaciosBlanco=new StringTrimmerEditor(true);
+		binder.registerCustomEditor(String.class, recortaEspaciosBlanco);
+	}
 	
 	public String getNombre() {
 		return nombre;
