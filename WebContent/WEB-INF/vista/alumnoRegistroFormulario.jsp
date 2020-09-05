@@ -12,9 +12,17 @@
 		Nombre: <form:input path="nombre"/>
 		<br/>
 		<form:errors path="nombre" style="color:red"/>
-		<br>
+		<br/>
 		Apellido: <form:input path="apellido"/>
 		<br/>
+		Edad: <form:input path="edad"/>
+		<br/>
+		<form:errors path="edad" style="color:red"/>
+		<br/>	
+		Email: <form:input path="email"/>
+		<br/>
+		<form:errors path="email" style="color:red"/>
+		<br/>	
 		Asignaturas Optativas: 
 		<br/>
 		<form:select path="optativa" multiple="true">
