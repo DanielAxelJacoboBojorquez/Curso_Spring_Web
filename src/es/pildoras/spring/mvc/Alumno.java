@@ -7,7 +7,7 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.InitBinder;
 
 public class Alumno {
-	//Validaci�n de Espacios
+	//Validacion de Espacios
 	@InitBinder
 	public void miBinder(WebDataBinder binder) {
 		StringTrimmerEditor recortaEspaciosBlanco=new StringTrimmerEditor(true);
