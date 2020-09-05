@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>  
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,15 +18,19 @@
 		Edad: <form:input path="edad"/>
 		<br/>
 		<form:errors path="edad" style="color:red"/>
-		<br/>	
+		<br/>
 		Email: <form:input path="email"/>
 		<br/>
 		<form:errors path="email" style="color:red"/>
-		<br/>	
-		Asignaturas Optativas: 
+		<br/>
+    	C. Postal: <form:input path="codigoPostal"/>
+		<br/>
+		<form:errors path="codigoPostal" style="color:red"/>
+		<br/>
+		Asignaturas Optativas:
 		<br/>
 		<form:select path="optativa" multiple="true">
-			<form:option value="Diseño" label="Diseño"/>
+			<form:option value="Diseï¿½o" label="Diseï¿½o"/>
 			<form:option value="Karate" label="Karate"/>
 			<form:option value="Comercio" label="Comercio"/>
 			<form:option value="Danza" label="Danza"/>
@@ -41,9 +45,9 @@
 		<br/>
 		Idiomas
 		<br/>
-		<form:checkbox path="idiomasAlumno" value="Inglés"/> Inglés<br/>		
-		<form:checkbox path="idiomasAlumno" value="Francés"/> Francés<br/>
-		<form:checkbox path="idiomasAlumno" value="Alemán"/> Alemán<br/>		
+		<form:checkbox path="idiomasAlumno" value="Inglï¿½s"/> Inglï¿½s<br/>
+		<form:checkbox path="idiomasAlumno" value="Francï¿½s"/> Francï¿½s<br/>
+		<form:checkbox path="idiomasAlumno" value="Alemï¿½n"/> Alemï¿½n<br/>
 		<form:checkbox path="idiomasAlumno" value="Chino"/> Chino
 		<br/>
 		<input type="submit" value="Enviar">
